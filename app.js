@@ -9,6 +9,7 @@ let imageDiv = document.querySelector(".image-data")
 
 fetch(endPoint)
     .then(responseData => {
+        // use .json() to convert json raw data to an readable object for use
         return responseData.json()
     })
     .then(parsedData => {
